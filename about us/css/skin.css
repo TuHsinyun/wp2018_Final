@@ -1,0 +1,73 @@
+/* GENERAL ------------------------------------------ */
+
+body{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	background: #efece8;
+	color: #888;
+}
+
+header,
+footer{
+	background-image: url(../img/noise.png) repeat;
+	background-color: #383f47;
+}
+
+body a{ color: #383f47; }
+
+a:hover{ color: #a0a0a0; }
+
+h1,h2,h3,h4,h5,h6{ color: #383f47; }
+
+/* Selection colours (easy to forget) */
+
+::selection 	 	{background: #fbe471 }
+::-moz-selection 	{background: #fbe471}
+img::selection 		{background: #fbe471}
+img::-moz-selection	{background: #fbe471}
+body {-webkit-tap-highlight-color: background: #fbe471}
+
+/* HEADINGS ------------------------------------------------------------*/
+
+/*.masthead{ border-bottom: 1px solid #ccc; }*/
+	
+/* NAVIGATION ------------------------------------------------------------*/
+
+#nav>li>a{ color: #f1f1f1; }
+
+#nav>li>a:hover{ color: #fee271; }
+
+#nav>li.current-menu-item>a,
+#nav>li.current_page_item>a{ border-bottom: solid #fee271 2px; }
+
+
+}
+
+/* CATEGORIES NAVIGATION ------------------------------------------------------------*/
+
+.cat-nav li{ border-right: 1px solid #444; }
+
+
+
+/* MAIN ------------------------------------------------------------*/
+
+#main .wrapper{  background-color: #f1f1f1; }
+
+
+
+/* HOME ------------------------------------------------------------*/
+
+
+/*.home-block figure .thumb{ background: #fff url(../img/plus.png) no-repeat center center; }*/
+
+
+/* BLOG ------------------------------------------------------------*/
+
+
+#posts-list .entry-date,
+#posts-content .entry-date,
+.home-posts .entry-date{
+	background: #3b424b;
+	color: #efe271;
+}
+
