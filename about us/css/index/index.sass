@@ -1,0 +1,28 @@
+$color-black: #333333
+$color-yellow: #F9D53D
+    
+*
+    color: $color-black
+#box
+    display: flex
+    width: 100vw
+    height: 100vh
+    background: $color-yellow
+    align-items: center
+    justify-content: center
+    #wrapper
+        display: relative
+        text-align: center
+        // background: red
+        &:hover
+            opacity: 0.2
+        img
+            cursor: pointer
+            width: 20vw
+    #enter
+        font-family: 'Roboto', sans-serif
+        font-weight: 700
+        display: block
+        position: absolute
+        a
+            font-size: 24px
