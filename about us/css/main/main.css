@@ -1,7 +1,21 @@
 body {
   background: #eee;
 }
-
+.loading{
+  position : relative;
+  width :100vw;
+  height : 100vh;
+  /* background-color : white; */
+  align-items :center;
+  display :flex;
+  justify-content : center;
+}
+#load_pic{
+  display : absolute;
+  background-image : url("https://i.screenshot.net/6dr1kf1");
+  width:100px;
+  height:100px;
+}
 nav {
   position: fixed;
   z-index: 100;
