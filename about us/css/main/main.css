@@ -3,7 +3,8 @@ body {
   overflow: hidden;
 }
 .loading{
-  position : relative;
+  position : fixed;
+  top:0;
   z-index: 200;
   background: #eee;
   width :100vw;
@@ -227,6 +228,13 @@ nav #nav-items #pointer {
 }
 #members-wrapper #members-section #members-detail #detail-section #members-introduction-background .members-introduction ul li p {
   color: #333333;
+}
+div .member:hover{
+  cursor : pointer;
+  -webkit-transform : scale(1.2);
+  transform :scale(1.2);
+  transition : 0.3s;
+  overflow :hidden;
 }
 
 /*# sourceMappingURL=main.css.map */
