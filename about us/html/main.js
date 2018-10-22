@@ -1,4 +1,5 @@
 $(window).load(function(){
+  $('html,body').animate({scrollTop:0},200);
   $(".loading").fadeOut(1000,function(){
     $("#project-wrapper").animate({width:'100vw',opacity :'1'},600,function(){
         setTimeout($('body').css({'overflow':'auto'}),1000);
@@ -22,7 +23,6 @@ var arrow = $("#arrow-down img , ul li:eq(0)"),
       scrollTop:0},650);
   });
 
-  mouse
 
 });
 
