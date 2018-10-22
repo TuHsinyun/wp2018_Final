@@ -1,6 +1,7 @@
 $(window).load(function(){
   $(".loading").fadeOut(1000,function(){
-    $("#enter").fadeIn(300);
+    // $("#enter").fadeIn(300);
+  setTimeout($('body').css({'overflow':'auto'}),1000);
   });
 });
 

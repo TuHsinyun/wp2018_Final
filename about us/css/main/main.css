@@ -1,8 +1,11 @@
 body {
   background: #eee;
+  overflow: hidden;
 }
 .loading{
   position : relative;
+  z-index: 200;
+  background: #eee;
   width :100vw;
   height : 100vh;
   align-items :center;
@@ -10,7 +13,7 @@ body {
   justify-content : center;
 }
 #load_pic{
-  display : absolute;
+  /* display : absolute; */
   background-image : url("https://i.screenshot.net/6dr1kf1");
   width:100px;
   height:100px;
