@@ -28,8 +28,9 @@
   display: relative;
   text-align: center;
 }
-#box #wrapper:hover {
-  opacity: 0.2;
+#box #wrapper:hover{
+  transition :0.5s;
+  opacity: 0.3;
 }
 #box #wrapper img {
   cursor: pointer;
