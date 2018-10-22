@@ -8,18 +8,12 @@ $(window).load(function(){
 });
 
 $(document).ready(function(){
-var arrow = $("#arrow-down img"),
+var arrow = $("#arrow-down img , ul li:eq(0)"),
     scroll_bottom = $("body").height()+$(window).height(),
-    button_team= $("ul li:eq(0)"),
     button_project = $("ul li:eq(1)"),
     $body = (window.opera) ? (document.compatMode =="CSS1Compat" ? $('html') : $('body')):$('html,body');
 
   arrow.click(function(){
-    $body.stop().animate({
-      scrollTop:scroll_bottom},850);
-  });
-  
-  button_team.click(function(){
     $body.stop().animate({
       scrollTop:scroll_bottom},850);
   });
@@ -29,6 +23,7 @@ var arrow = $("#arrow-down img"),
       scrollTop:0},650);
   });
 
+  mouse
 
 });
 
