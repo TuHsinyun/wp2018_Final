@@ -1,7 +1,10 @@
 $(window).load(function(){
-  $(".loading").fadeOut(1000,function(){
-    $("#project-wrapper").animate({width:'100vw',opacity :'1'},600,function(){
+  $('html,body').animate({scrillTop:0},200);
+    $(".loading").fadeOut(1000,function(){
+      $("#project-wrapper").animate({width:'100vw',opacity :'1'},600,function(){
         setTimeout($('body').css({'overflow':'auto'}),1000);
+        $("#members-wrapper").css("display","block");
+        $("::-webkit-scrollbar").css("display","none");
     });
   });
 });
