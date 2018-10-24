@@ -13,7 +13,7 @@ $(window).load(function(){
 $(document).ready(function(){
 var arrow = $("#arrow-down img , ul li:eq(0)"),
     scroll_bottom = $("body").height()+$(window).height(),
-    button_project = $("ul li:eq(1)"),
+    button_project = $("#nav-items li:eq(1)"),
     $body = (window.opera) ? (document.compatMode =="CSS1Compat" ? $('html') : $('body')):$('html,body'),
     title1 = $("#Member1") ,
     content1 = title1.next(),
