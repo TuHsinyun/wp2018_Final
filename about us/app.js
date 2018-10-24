@@ -3,8 +3,3 @@ $(window).load(function(){
   $("#enter").fadeIn(300);
   });
 });
-
-  
-
-
-
