@@ -19,7 +19,6 @@ body {
 .loading{
   position : fixed;
   top:0;
-  position : relative;
   z-index: 200;
   background: #eee;
   /* background: red; */
