@@ -25,6 +25,15 @@ var arrow = $("#arrow-down img , ul li:eq(0)"),
       scrollTop:0},650);
   });
 
+  $('.pic').mouseover((e)=>{
+    $('.pic').css({'transform':'scale(1)'});
+    e.target.style.transform = 'scale(1.3)';
+    // console.log(e.target.style());
+  })
+  $('.pic').mouseout(()=>{
+    $('.pic').css({'transform':'scale(1)'});
+  })
+
 
 });
 
