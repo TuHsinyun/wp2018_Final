@@ -25,13 +25,20 @@ var arrow = $("#arrow-down img , ul li:eq(0)"),
       scrollTop:0},650);
   });
 
-  $('.pic').mouseover((e)=>{
+  $('.pic').mousemove((e)=>{
     $('.pic').css({'transform':'scale(1)'});
     e.target.style.transform = 'scale(1.3)';
-    // console.log(e.target.style());
+
+    var x = e.clientX - 310;
+    var y = e.clientY - 180;
+    var element = '#d'+ e.target.alt;
+    $(element).css({'opacity':'1'});
+    $(element).css({'left':x,'top':y});
   })
-  $('.pic').mouseout(()=>{
+  $('.pic').mouseout((e)=>{
     $('.pic').css({'transform':'scale(1)'});
+    var element = '#d'+ e.target.alt;
+    $(element).css({'opacity':'0'});
   })
 
 

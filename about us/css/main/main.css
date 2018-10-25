@@ -122,6 +122,10 @@ nav #nav-items #pointer {
   position: absolute;
   transition: transform 0.5s;
 }
+#project-img .description{
+  opacity: 0;
+  transition: opacity 0.3s;
+}
 #chornic{
   left: 40%;
   top: 20%;
@@ -165,6 +169,13 @@ nav #nav-items #pointer {
 #bone{
   left: 68%;
   top: 28%;
+}
+#project-img .description{
+  position: absolute;
+  z-index: 300;
+  width: 100px;
+  height: 100px;
+  background: rgba(0,0,0,0.5);
 }
 
 #project-wrapper #project-section #project-content {
