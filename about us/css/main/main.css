@@ -123,8 +123,9 @@ nav #nav-items #pointer {
   transition: transform 0.5s;
 }
 #project-img .description{
+  display: none;
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: all 0.3s;
 }
 #chornic{
   left: 40%;

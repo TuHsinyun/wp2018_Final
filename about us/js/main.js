@@ -26,21 +26,23 @@ var arrow = $("#arrow-down img , ul li:eq(0)"),
   });
 
   $('.pic').mousemove((e)=>{
-    $('.pic').css({'transform':'scale(1)'});
-    e.target.style.transform = 'scale(1.3)';
+    e.target.style.transform = 'scale(1.4)';
 
     var x = e.clientX - 310;
     var y = e.clientY - 180;
     var element = '#d'+ e.target.alt;
-    $(element).css({'opacity':'1'});
+    $(element).css({'display':'block','opacity':'1'});
+    // $(element).css({'display':'block'});
+    // setTimeout(()=>{$(element).css({'opacity':'1'});},300);
     $(element).css({'left':x,'top':y});
   })
   $('.pic').mouseout((e)=>{
     $('.pic').css({'transform':'scale(1)'});
     var element = '#d'+ e.target.alt;
-    $(element).css({'opacity':'0'});
+    $(element).css({'display':'none','opacity':'0'});
+    // $(element).css({'opacity':'0'});
+    // setTimeout(()=>{$(element).css({'display':'none'});},300);
   })
-
 
 });
 
