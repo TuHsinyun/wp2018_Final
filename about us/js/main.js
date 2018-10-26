@@ -27,9 +27,8 @@ var arrow = $("#arrow-down img , ul li:eq(0)"),
 
   $('.pic').mousemove((e)=>{
     e.target.style.transform = 'scale(1.4)';
-
-    var x = e.clientX - 310;
-    var y = e.clientY - 180;
+    var x = e.pageX - 310;
+    var y = e.pageY - 180;
     var element = '#d'+ e.target.alt;
     $(element).css({'display':'block','opacity':'1'});
     // $(element).css({'display':'block'});
