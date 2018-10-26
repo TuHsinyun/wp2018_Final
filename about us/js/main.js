@@ -42,7 +42,6 @@ var arrow = $("#arrow-down img , ul li:eq(0)"),
     // $(element).css({'opacity':'0'});
     // setTimeout(()=>{$(element).css({'display':'none'});},300);
   })
-
 });
 
 
