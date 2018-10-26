@@ -111,10 +111,74 @@ nav #nav-items #pointer {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* background: red; */
+  position: relative;
 }
-#project-wrapper #project-section #project-img img {
+#project-wrapper #project-section #project-img #main-pic {
   width: 90%;
 }
+#project-img .pic{
+  height: 5%;
+  position: absolute;
+  transition: transform 0.5s;
+}
+#project-img .description{
+  display: none;
+  opacity: 0;
+  transition: all 0.3s;
+}
+#chornic{
+  left: 40%;
+  top: 20%;
+}
+#self-esteem{
+  left: 22%;
+  top: 27%;
+}
+#life-quality{
+  left: 10%;
+  top: 36%;
+}
+#basic{
+  left: 2%;
+  top: 45%;
+}
+#depression{
+  left: 12%;
+  top: 54%;
+}
+#social{
+  left: 13%;
+  top: 64%;
+}
+#cognitive-function{
+  left: 68%;
+  top: 66%;
+}
+#body-composition{
+  left: 75%;
+  top: 58%;
+}
+#motivation{
+  left: 78%;
+  top: 48%;
+}
+#vo-max{
+  left: 75%;
+  top: 38%;
+}
+#bone{
+  left: 68%;
+  top: 28%;
+}
+#project-img .description{
+  position: absolute;
+  z-index: 300;
+  width: 100px;
+  height: 100px;
+  background: rgba(0,0,0,0.5);
+}
+
 #project-wrapper #project-section #project-content {
   flex: 2;
   display: flex;
