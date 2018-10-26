@@ -42,12 +42,31 @@ $(document).ready(function(){
     // setTimeout(()=>{$(element).css({'display':'none'});},300);
   })
 
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   $(".member").click(function(){
     var member = this.id;
 
     switch(member){
       case 'member1':
-
         break;
       case 'member1':
         break;
