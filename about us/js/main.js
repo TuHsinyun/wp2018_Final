@@ -41,27 +41,6 @@ $(document).ready(function(){
     // $(element).css({'opacity':'0'});
     // setTimeout(()=>{$(element).css({'display':'none'});},300);
   })
-
- 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   $(".member").click(function(){
     var member = this.id;
 
@@ -81,7 +60,3 @@ $(document).ready(function(){
     }
   })
 });
-
-
-
-
