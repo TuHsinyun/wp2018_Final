@@ -42,21 +42,41 @@ $(document).ready(function(){
     // setTimeout(()=>{$(element).css({'display':'none'});},300);
   })
   $(".member").click(function(){
-    var member = this.id;
+    var member = this.id,
+    current_display = 0 ;
+
+    $(".members-intro li:eq("+current_display+")").animate({opacity:'0'},550,function(){
+      document.getElementById("member1_intro").style.WebkitAnimationName = "pic_animate_in" ;
+    });
 
     switch(member){
-      case 'member1':
+      case 'member0':
+        if(current_display==0) break;
+        else{
+        }
+
+        current_display = 0;
         break;
+
+
       case 'member1':
+        if(current_display==1) break;
+        else{
+        };         
+        current_display = 2;
         break;
+
       case 'member2':
+        current_display = 2;
         break;
       case 'member3':
+        current_display = 3;
         break;
       case 'member4':
-        break;
-      case 'member5':
+        current_display = 4;
         break;
     }
-  })
+
+  });
+
 });
