@@ -2,6 +2,16 @@ body {
   background: #eee;
   overflow: hidden;
 }
+@-webkit-keyframes pic_animate_in{
+  0%  { opacity:0  ; top:0px ; };
+  50% { opacity:0.5; top:25px; };
+  100%{ opacity:1  ; top:50px; };
+}
+@-webkit-keyframes pic_animate_out{
+  0%  { opacity:1  ; margin-top:0px  ;};
+  50% { opacity:0.5; margin-top:25px ;};
+  100%{ opacity:0  ; margin-top:50px ;};
+}
 ::-webkit-scrollbar-track{
   -webkit-box-shadow :inset 0 0 6px rgba(0,0,0,0.3);
   border-radius : 10px;
@@ -212,7 +222,7 @@ nav #nav-items #pointer {
   animation: move 1.5s infinite;
 }
 
-@keyframes move {
+@-webkit-keyframes move {
   0% {
     margin-top: -15px;
   }
@@ -303,8 +313,14 @@ nav #nav-items #pointer {
 #members-wrapper #members-section #members-detail #detail-section #members-introduction-background .members-introduction ul li h4 {
   color: #333333;
   margin-bottom: 20px;
+} 
+.members-introduction{
+  -webkit-animation : 1.3s;
+  animation : 1.3s;
+  position : relative;
+ /* background-color : black;*/
 }
-#members-wrapper #members-section #members-detail #detail-section #members-introduction-background .members-introduction ul li p {
+.members-introduction ul li p {
   color: #333333;
 }
 div .member:hover{
