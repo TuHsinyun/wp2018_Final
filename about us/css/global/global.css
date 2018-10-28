@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-size: 13px;
   color: white;
+  font-family: sans-serif;
 }
 
 nav{
@@ -26,7 +27,6 @@ p{
   font-family: sans-serif;
   font-size: 16px;
 }
-
 .clearfix:after{
   content: "";
   clear: both;
@@ -34,41 +34,4 @@ p{
   overflow: hidden;
   visibility: hidden;
   height: 0;
-          *{
-            margin: 0;
-            padding: 0;
-            text-decoration: none;
-            list-style: none;
-            box-sizing: border-box;
-            font-size: 13px;
-            color: white;
-          }
-
-          nav{
-            font-family: 'Roboto', sans-serif;
-            letter-spacing: 0.3px;
-          }
-          h3{
-            font-family: 'Roboto Condensed', sans-serif;
-            font-size: 8vw;
-            line-height: 8vw;
-            text-shadow: -3px 6px 10px rgba(33,33,33, 0.2);
-          }
-          h4{
-            font-family: 'Roboto Condensed', sans-serif;
-            font-size: 30px;
-          }
-          p{
-            font-family: sans-serif;
-            font-size: 16px;
-          }
-
-          .clearfix:after{
-            content: "";
-            clear: both;
-            display: block;
-            overflow: hidden;
-            visibility: hidden;
-            height: 0;
-          }
-        }
+}
