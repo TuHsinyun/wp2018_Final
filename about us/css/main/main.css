@@ -317,10 +317,14 @@ nav #nav-items #pointer {
 .members-introduction{
   -webkit-animation : 1.3s;
   animation : 1.3s;
-  position : relative;
  /* background-color : black;*/
+  width : 90%;
 }
-.members-introduction ul li p {
+.members-introduction ul li {
+  position  :absolute;
+  height :100px;
+}
+.members-introduction p{
   color: #333333;
 }
 div .member:hover{
