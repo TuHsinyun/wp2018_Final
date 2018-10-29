@@ -45,14 +45,19 @@ $(document).ready(function(){
     var member = this.id,
     current_display = 0 ;
 
-    $(".members-intro li:eq("+current_display+")").animate({opacity:'0'},550,function(){
-      document.getElementById("member1_intro").style.WebkitAnimationName = "pic_animate_in" ;
+    $("#member0_intro").stop().animate({opacity:'0'},550,function(){
+      // document.getElementById("member0_intro").style.WebkitAnimationName = "pic_animate_in" ;
+      //
+   // $("#member0_intro").css({'display' : 'none' });
+      //$("#member0_intro").stop().animate({top:'100px',opacity:'1'},500,)
+        $("#member1_intro").stop().animate({/*top:'80px',*/opacity:'1'},500,)
     });
 
-    switch(member){
+ /*   switch(member){
       case 'member0':
         if(current_display==0) break;
         else{
+          $(".members-intro li:eq("+current_display+")").animate({opacity:'1'},500);
         }
 
         current_display = 0;
@@ -63,19 +68,34 @@ $(document).ready(function(){
         if(current_display==1) break;
         else{
         };         
-        current_display = 2;
+        current_display = 1;
         break;
 
       case 'member2':
+        if(current_display==2) break;
+        else{
+          $(".members-intro li:eq("+current_display+")").animate({top:'-50px',opacity:'1'},500);
+        }
+
         current_display = 2;
         break;
       case 'member3':
+        if(current_display==3) break;
+        else{
+          $(".members-intro li:eq("+current_display+")").animate({opacity:'1'},500);
+        }
+
         current_display = 3;
         break;
-      case 'member4':
+      case 'member4': 
+        if(current_display==4) break;
+        else{
+          $(".members-intro li:eq("+current_display+")").animate({opacity:'1'},500);
+        }
+
         current_display = 4;
         break;
-    }
+    }*/
 
   });
 
