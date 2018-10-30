@@ -268,6 +268,11 @@ nav #nav-items #pointer {
   flex: 1;
 }
 #members-wrapper #members-section #members #upper .member {
+  width : 20%;
+  height : 35%;
+  overflow : hidden;
+  background-size : cover;
+  background-repeat : no-repeat;
   display: flex;
   flex: 1;
   align-items: center;
