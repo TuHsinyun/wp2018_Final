@@ -322,8 +322,8 @@ nav #nav-items #pointer {
   width : 90%;
 }
 .members-introduction ul li {
-  position  :absolute;
-  height :100px;
+  position: absolute ;
+  width : 15%;
 }
 .members-introduction p{
   color: #333333;
