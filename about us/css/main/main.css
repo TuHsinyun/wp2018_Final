@@ -313,17 +313,12 @@ nav #nav-items #pointer {
 }
 #members-wrapper #members-section #members-detail #detail-section #members-introduction-background .members-introduction ul li h4 {
   color: #333333;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 } 
-.members-introduction{
-  -webkit-animation : 1.3s;
-  animation : 1.3s;
- /* background-color : black;*/
-  width : 90%;
-}
 .members-introduction ul li {
   position: absolute ;
   width : 15%;
+  line-height :30px;
 }
 .members-introduction p{
   color: #333333;

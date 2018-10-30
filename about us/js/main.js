@@ -69,49 +69,44 @@ $(document).ready(function(){
   })
   $(".member").click(function(){
     var member = this.id;
-  /*  $("#member0_intro").stop().animate({opacity:'0'},550,function(){
-      $("#member1_intro").stop().animate({top:'300px'},100,function(){
-        $("#member1_intro").stop().animate({top:'120px',opacity:'1'},500,)
-      });
-    });*/
 
+    _.debounce( Switch_intro(member) ,1000,false);
+  });
+
+  function Switch_intro(member){ 
     switch(member){
       case 'member1':
         console.log('1');
         if(current_display==1) break;
         else{
-          $("#member"+current_display+"_intro").stop().animate({opacity:'0'},500,function(){
-            $("#member1_intro").stop().animate({top:'300px',opacity:'0'},100,function(){
-              $("#member1_intro").stop().animate({top:'113px',opacity:'1'},400,)
-            });
+          $("#member"+current_display+"_intro").stop(true).animate({opacity:'0'},400);
+            $("#member1_intro").animate({top:'250px',opacity:'0'},1,function(){
+              $("#member1_intro").animate({top:'113px',opacity:'1'},500,)          
           });
         }
         current_display = 1;
         break;
-
       case 'member2':
         console.log('2..');
         if(current_display==2) break;
         else{ 
-          $("#member"+current_display+"_intro").stop().animate({opacity:'0'},500,function(){
-            $("#member2_intro").stop().animate({top:'300px',opacity:'0'},100,function(){
-              $("#member2_intro").stop().animate({top:'113px',opacity:'1'},400,)
-            });
+          $("#member"+current_display+"_intro").stop(true).animate({opacity:'0'},400);
+            $("#member2_intro").animate({top:'300px',opacity:'0'},1,function(){
+              $("#member2_intro").animate({top:'113px',opacity:'1'},500,)
+              //  setTimeout(,800);
           });
         };         
         console.log(current_display);
         current_display = 2;
         console.log(current_display);
         break;
-
       case 'member3':
         console.log('3');
         if(current_display==3) break;
         else{
-          $("#member"+current_display+"_intro").stop().animate({opacity:'0'},500,function(){
-            $("#member3_intro").stop().animate({top:'300px',opacity:'0'},100,function(){
-              $("#member3_intro").stop().animate({top:'113px',opacity:'1'},400,)
-            });
+          $("#member"+current_display+"_intro").stop(true).animate({opacity:'0'},400);
+            $("#member3_intro").stop().animate({top:'300px',opacity:'0'},1,function(){
+              $("#member3_intro").stop().animate({top:'113px',opacity:'1'},500,)
           });
         }
         current_display = 3;
@@ -120,10 +115,9 @@ $(document).ready(function(){
         console.log('4');
         if(current_display==4) break;
         else{ 
-          $("#member"+current_display+"_intro").stop().animate({opacity:'0'},500,function(){
-            $("#member4_intro").stop().animate({top:'300px',opacity:'0'},100,function(){
-              $("#member4_intro").stop().animate({top:'113px',opacity:'1'},400,)
-            });
+          $("#member"+current_display+"_intro").stop(true).animate({opacity:'0'},400);
+            $("#member4_intro").stop().animate({top:'300px',opacity:'0'},1,function(){
+              $("#member4_intro").stop().animate({top:'113px',opacity:'1'},500,)
           });
         }
         current_display = 4;
@@ -132,14 +126,14 @@ $(document).ready(function(){
         console.log('5');
         if(current_display==5) break;
         else{ 
-          $("#member"+current_display+"_intro").stop().animate({opacity:'0'},500,function(){
-            $("#member5_intro").stop().animate({top:'300px',opacity:'0'},100,function(){
-              $("#member5_intro").stop().animate({top:'113px',opacity:'1'},400,)
-            });
+          $("#member"+current_display+"_intro").stop(true).animate({opacity:'0'},400);
+            $("#member5_intro").stop().animate({top:'300px',opacity:'0'},1,function(){
+              $("#member5_intro").stop().animate({top:'113px',opacity:'1'},500,)
           });
         }
         current_display = 5;
         break;
     }
-  });
+  }
+
 });
