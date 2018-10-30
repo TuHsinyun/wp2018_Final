@@ -268,11 +268,11 @@ nav #nav-items #pointer {
   flex: 1;
 }
 #members-wrapper #members-section #members #upper .member {
-  width : 20%;
-  height : 35%;
-  overflow : hidden;
-  background-size : cover;
-  background-repeat : no-repeat;
+  /* width : 20%; */
+  /* height : 35%; */
+  /* overflow : hidden; */
+  /* background-size : cover; */
+  /* background-repeat : no-repeat; */
   display: flex;
   flex: 1;
   align-items: center;
@@ -281,7 +281,6 @@ nav #nav-items #pointer {
 #members-wrapper #members-section #members #lower {
   display: flex;
   flex: 1;
-  text-align: center;
 }
 #members-wrapper #members-section #members #lower .member {
   display: flex;
@@ -319,7 +318,13 @@ nav #nav-items #pointer {
 #members-wrapper #members-section #members-detail #detail-section #members-introduction-background .members-introduction ul li h4 {
   color: #333333;
   margin-bottom: 30px;
-} 
+}
+.member img{
+  width: 90%;
+}
+#lower .member img{
+  width: 65%;
+}
 .members-introduction ul li {
   position: absolute ;
   width : 15%;
