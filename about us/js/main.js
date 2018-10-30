@@ -82,7 +82,7 @@ $(document).ready(function(){
         else{
           $("#member"+current_display+"_intro").stop().animate({opacity:'0'},500,function(){
             $("#member1_intro").stop().animate({top:'300px',opacity:'0'},100,function(){
-              $("#member1_intro").stop().animate({top:'120px',opacity:'1'},400,)
+              $("#member1_intro").stop().animate({top:'113px',opacity:'1'},400,)
             });
           });
         }
@@ -95,7 +95,7 @@ $(document).ready(function(){
         else{ 
           $("#member"+current_display+"_intro").stop().animate({opacity:'0'},500,function(){
             $("#member2_intro").stop().animate({top:'300px',opacity:'0'},100,function(){
-              $("#member2_intro").stop().animate({top:'120px',opacity:'1'},400,)
+              $("#member2_intro").stop().animate({top:'113px',opacity:'1'},400,)
             });
           });
         };         
@@ -110,7 +110,7 @@ $(document).ready(function(){
         else{
           $("#member"+current_display+"_intro").stop().animate({opacity:'0'},500,function(){
             $("#member3_intro").stop().animate({top:'300px',opacity:'0'},100,function(){
-              $("#member3_intro").stop().animate({top:'120px',opacity:'1'},400,)
+              $("#member3_intro").stop().animate({top:'113px',opacity:'1'},400,)
             });
           });
         }
@@ -122,7 +122,7 @@ $(document).ready(function(){
         else{ 
           $("#member"+current_display+"_intro").stop().animate({opacity:'0'},500,function(){
             $("#member4_intro").stop().animate({top:'300px',opacity:'0'},100,function(){
-              $("#member4_intro").stop().animate({top:'120px',opacity:'1'},400,)
+              $("#member4_intro").stop().animate({top:'113px',opacity:'1'},400,)
             });
           });
         }
@@ -134,7 +134,7 @@ $(document).ready(function(){
         else{ 
           $("#member"+current_display+"_intro").stop().animate({opacity:'0'},500,function(){
             $("#member5_intro").stop().animate({top:'300px',opacity:'0'},100,function(){
-              $("#member5_intro").stop().animate({top:'120px',opacity:'1'},400,)
+              $("#member5_intro").stop().animate({top:'113px',opacity:'1'},400,)
             });
           });
         }
