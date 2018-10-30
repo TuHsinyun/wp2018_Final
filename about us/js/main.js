@@ -12,7 +12,8 @@ $(document).ready(function(){
   var arrow = $("#arrow-down img , #nav-items li:eq(0)"),
   scroll_bottom = $("body").height()+$(window).height(),
   button_project = $("#nav-items li:eq(1)"),
-  $body = (window.opera) ? (document.compatMode =="CSS1Compat" ? $('html') : $('body')):$('html,body');
+  $body = (window.opera) ? (document.compatMode =="CSS1Compat" ? $('html') : $('body')):$('html,body'),
+  current_display = 1;
 
   // 導覽行動畫
   $("#OURPROJECT").click(function(){
@@ -67,61 +68,79 @@ $(document).ready(function(){
     // setTimeout(()=>{$(element).css({'display':'none'});},300);
   })
   $(".member").click(function(){
-    var member = this.id,
-    current_display = 0 ;
+    var member = this.id;
+  /*  $("#member0_intro").stop().animate({opacity:'0'},550,function(){
+      $("#member1_intro").stop().animate({top:'300px'},100,function(){
+        $("#member1_intro").stop().animate({top:'120px',opacity:'1'},500,)
+      });
+    });*/
 
-    $("#member0_intro").stop().animate({opacity:'0'},550,function(){
-      // document.getElementById("member0_intro").style.WebkitAnimationName = "pic_animate_in" ;
-      //
-   // $("#member0_intro").css({'display' : 'none' });
-      //$("#member0_intro").stop().animate({top:'100px',opacity:'1'},500,)
-        $("#member1_intro").stop().animate({/*top:'80px',*/opacity:'1'},500,)
-    });
-
- /*   switch(member){
-      case 'member0':
-        if(current_display==0) break;
-        else{
-          $(".members-intro li:eq("+current_display+")").animate({opacity:'1'},500);
-        }
-
-        current_display = 0;
-        break;
-
-
+    switch(member){
       case 'member1':
+        console.log('1');
         if(current_display==1) break;
         else{
-        };         
+          $("#member"+current_display+"_intro").animate({opacity:'0'},550,function(){
+            $("#member1_intro").stop().animate({top:'300px'},100,function(){
+              $("#member1_intro").stop().animate({top:'120px',opacity:'1'},500,)
+            });
+          });
+        }
         current_display = 1;
         break;
 
       case 'member2':
+        console.log('2..');
         if(current_display==2) break;
-        else{
-          $(".members-intro li:eq("+current_display+")").animate({top:'-50px',opacity:'1'},500);
-        }
-
+        else{ 
+          $("#member"+current_display+"_intro").animate({opacity:'0'},550,function(){
+            $("#member2_intro").stop().animate({top:'300px'},100,function(){
+              $("#member2_intro").stop().animate({top:'120px',opacity:'1'},500,)
+            });
+          });
+        };         
+        console.log(current_display);
         current_display = 2;
+        console.log(current_display);
         break;
+
       case 'member3':
+        console.log('3');
         if(current_display==3) break;
         else{
-          $(".members-intro li:eq("+current_display+")").animate({opacity:'1'},500);
+          $("#member"+current_display+"_intro").animate({opacity:'0'},550,function(){
+            $("#member3_intro").stop().animate({top:'300px'},100,function(){
+              $("#member3_intro").stop().animate({top:'120px',opacity:'1'},500,)
+            });
+          });
         }
-
         current_display = 3;
         break;
-      case 'member4': 
+      case 'member4':
+        console.log('4');
         if(current_display==4) break;
-        else{
-          $(".members-intro li:eq("+current_display+")").animate({opacity:'1'},500);
+        else{ 
+          $("#member"+current_display+"_intro").animate({opacity:'0'},550,function(){
+            $("#member4_intro").stop().animate({top:'300px'},100,function(){
+              $("#member4_intro").stop().animate({top:'120px',opacity:'1'},500,)
+            });
+          });
         }
-
         current_display = 4;
         break;
-    }*/
-
+      case 'member5': 
+        console.log('5');
+        if(current_display==5) break;
+        else{ 
+          $("#member"+current_display+"_intro").animate({opacity:'0'},550,function(){
+            $("#member5_intro").stop().animate({top:'300px'},100,function(){
+              $("#member5_intro").stop().animate({top:'120px',opacity:'1'},500,)
+            });
+          });
+        }
+        current_display = 5;
+        break;
+    }
   });
 
 });
