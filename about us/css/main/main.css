@@ -58,6 +58,7 @@ nav #logo {
   margin-left: 50px;
   display: inline;
   line-height: 60px;
+  cursor: pointer;
 }
 nav #nav-items {
   display: inline;

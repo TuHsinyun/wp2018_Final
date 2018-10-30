@@ -14,6 +14,31 @@ $(document).ready(function(){
   button_project = $("#nav-items li:eq(1)"),
   $body = (window.opera) ? (document.compatMode =="CSS1Compat" ? $('html') : $('body')):$('html,body');
 
+  // 導覽行動畫
+  $("#OURPROJECT").click(function(){
+    $("#OURPROJECT").css("color","#F9D53D");
+    $("#TEAMMEMBERS").css("color","#ffffff");
+    $("#pointer").stop().animate({right:'35px'},150);
+    });
+    $("#TEAMMEMBERS").click(function(){
+    $("#TEAMMEMBERS").css("color","#F9D53D");
+    $("#OURPROJECT").css("color","#ffffff");
+    $("#pointer").stop().animate({right:'158px'},150);
+    });
+  window.onscroll = function() {ss()};
+  function ss() {
+  if (document.body.scrollTop < $("body").height()/2|| document.documentElement.scrollTop <$("body").height()/2){
+    $("#OURPROJECT").css("color","#F9D53D");
+    $("#TEAMMEMBERS").css("color","#ffffff");
+    $("#pointer").stop().animate({right:'158px'},150);
+  }
+  if (document.body.scrollTop > $("body").height()/2|| document.documentElement.scrollTop >$("body").height()/2){
+    $("#OURPROJECT").css("color","#ffffff");
+    $("#TEAMMEMBERS").css("color","#F9D53D");
+    $("#pointer").stop().animate({right:'35px'},150);
+  }}
+
+  // 箭頭點擊動畫
   arrow.click(function(){
     $body.stop().animate({
       scrollTop:scroll_bottom},850);
