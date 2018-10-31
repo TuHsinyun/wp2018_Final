@@ -1,4 +1,11 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+<<<<<<< HEAD
+=======
+@font-face{
+  font-family: 'Noto Sans TC';
+  src: url(../../font/NotoSansTC-Regular.woff) format("woff");
+}
+>>>>>>> gh-pages
 
 *{
   margin: 0;
