@@ -70,6 +70,8 @@ $(document).ready(function(){
   $(".member").click(function(){
     var member = this.id;
     _.debounce( Switch_intro(member) ,1000,false);
+    $('.member img').removeClass();
+    $(this).children('img').addClass('active');
   });
 
   function Switch_intro(member){ 

@@ -320,10 +320,11 @@ nav #nav-items #pointer {
   margin-bottom: 30px;
 }
 .member img{
-  width: 90%;
+  width: 100%;
+  opacity: 0.5;
 }
-#lower .member img{
-  width: 65%;
+.member .active{
+  opacity: 1;
 }
 .members-introduction ul li {
   position: absolute ;
