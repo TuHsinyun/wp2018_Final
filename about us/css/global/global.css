@@ -1,3 +1,9 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@font-face{
+  font-family: 'Noto Sans TC';
+  src: url(../../font/NotoSansTC-Regular.woff) format("woff");
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -6,7 +12,7 @@
   box-sizing: border-box;
   font-size: 13px;
   color: white;
-  font-family: sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 nav{
@@ -20,12 +26,12 @@ h3{
   text-shadow: -3px 6px 10px rgba(33,33,33, 0.2);
 }
 h4{
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Roboto Condensed','Noto Sans TC', sans-serif;
   font-size: 30px;
 }
 p{
-  font-family: sans-serif;
-  font-size: 16px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 15px;
 }
 .clearfix:after{
   content: "";

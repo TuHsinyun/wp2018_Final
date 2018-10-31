@@ -7,6 +7,7 @@
     <title>Group D</title>
     <script language="Javascript" type="text/Javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
     <script type="text/Javascript" src="../js/main.js"></script>
+    <script type="text/Javascript" src="https://underscorejs.org/underscore-min.js"></script>
     <link rel="stylesheet" href="../css/global/global.css">
     <link rel="stylesheet" href="../css/main/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:400" rel="stylesheet">
@@ -56,7 +57,7 @@
             <div id="project-content">
                 <div>
                     <h4>年長者運動促進</h4>
-                    <p style="font-size:14px;">根據研究發現，年長者會有諸多老化問題，右圖中皆是年長者將可能面臨的生理、心理衰退。然而這些老化問題都可以透過身體活動來延緩症狀或是改善，並且帶給年長者自信心、維持良好的生活品質。故我們的專案想要利用遊戲當作媒介，作為提升年長者進行身體活動的動機，並且使他們養成規律運動的好習慣。</p>
+                    <p style="font-size:15px; line-height: 28px;">根據研究發現，年長者會有諸多老化問題，右圖中皆是年長者將可能面臨的生理、心理衰退。然而這些老化問題都可以透過身體活動來延緩症狀或是改善，並且帶給年長者自信心、維持良好的生活品質。故我們的專案想要利用遊戲當作媒介，作為提升年長者進行身體活動的動機，並且使他們養成規律運動的好習慣。</p>
                 </div>
             </div>
         </div>
@@ -67,47 +68,47 @@
     </div>
 
     <div id="members-wrapper">
-        <h3 id="members-title">TEAM<br>MEMBERS</h3>
-        <div id="members-section">
-            <div id="members">
-                <div id="upper">
-                    <div id="member1" class="member">
-                        <img src="../img/member1.svg">
-                    </div>
-                    <div id="member2" class="member">
-                        <img src="../img/member2.svg">
-                    </div>
-                    <div id="member3" class="member">
-                        <img src="../img/member3.svg">
-                    </div>
-                </div>
-                <div id="lower">
-                    <div id="member4" class="member">
-                        <img src="../img/member4.svg">
-                    </div>
-                    <div id="member5" class="member">
-                        <img src="../img/member5.svg">
-                    </div>
-                </div>
+      <h3 id="members-title">TEAM<br>MEMBERS</h3>
+      <div id="members-section">
+        <div id="members">
+          <div id="upper">
+            <div id="member1" class="member">
+              <img src="../img/IMG_1.png" class="active">
             </div>
-            <div id="members-detail">
-                <div id="detail-section">
-                    <div id="members-introduction-background">
-                        <div class="members-introduction">
-                            <ul class="members-intro">
-                                <li id="member1_intro"><h4>MEMBER 1</h4><p>1111contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent</p></li>
-                                <li id="member2_intro" style="opacity:0"><h4>MEMBER 2</h4><p>222contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent</p></li>
-                                <li id="member3_intro" style="opacity:0"><h4>MEMBER 3</h4><p>333contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent</p></li>
-                                <li id="member4_intro" style="opacity:0"><h4>MEMBER 4</h4><p>444contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent</p></li>
-                                <li id="member5_intro" style="opacity:0"><h4>MEMBER 5</h4><p>555contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent</p></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div id="members-detail-empty"></div>
+            <div id="member2" class="member">
+              <img src="../img/IMG_2.png">
             </div>
+            <div id="member3" class="member">
+              <img src="../img/IMG_3.png">
+            </div>
+          </div>
+          <div id="lower">
+            <div id="member4" class="member">
+              <img src="../img/IMG_4.png">
+            </div>
+            <div id="member5" class="member">
+              <img src="../img/IMG_5.png">
+            </div>
+          </div>
         </div>
+        <div id="members-detail">
+          <div id="detail-section">
+            <div id="members-introduction-background">
+              <div class="members-introduction">
+                <ul class="members-intro">
+                  <li id="member1_intro"><h4>郭家銘 <p style="display:inline; font-size: 14px">Kuo Chia-Ming</p> </h4><p>工設所碩二，自大學開始，一直過著不務正業的生活。跑步打球鋼琴是平常的樂趣，最近開始學習網頁前端知識。短期的目標是將碩士論文順利完成。</p></li>
+                  <li id="member2_intro" style="opacity:0"><h4>吳定祐 <p style="display:inline; font-size: 14px">Tim-Yo Wu</p></h4><p>電機系大三，轉學生一枚，學習能力不錯，最近正在努力把網頁知識弄熟，喜歡設計的元素，對網頁的一些動態效果很著迷。</p></li>
+                  <li id="member3_intro" style="opacity:0"><h4>涂忻芸 <p style="display:inline; font-size: 14px">Tu, Hsinyun</p></h4><p>工資系大四，標準吃貨，但因為只有腳踏車，還未能將台南吃遍。目前在成大剩最後一年，終於能安心地上自己想學的課了。</p></li>
+                  <li id="member4_intro" style="opacity:0"><h4>陳俊佑 <p style="display:inline; font-size: 14px">Chun-Yu Chen</p></h4><p>物理系大一，一個空想多於行動的幻想家，常在腦中模擬各種現實與非現實情境(白日夢)。大學目標是製作符合自己胃口的遊戲及交換學生。</p></li>
+                  <li id="member5_intro" style="opacity:0"><h4>陳泱寯 <p style="display:inline; font-size: 14px">Yang-Jun Chen</p></h4><p>電機系大三，平常嗜好是上網，追動畫，暑假迷上直排輪，目前正在精進中。因為喜歡上網，也想自己試試做出一個網頁。</p></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="members-detail-empty"></div>
+        </div>
+      </div>
     </div>
-        
-</body>
+
+  </body>
 </html>
