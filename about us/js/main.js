@@ -11,36 +11,37 @@ $(window).load(function(){
 $(document).ready(function(){
   var arrow = $("#arrow-down img , #nav-items li:eq(0)"),
   scroll_bottom = $("body").height()+$(window).height(),
+  button_team = $("#TEAMMEMBERS"),
   button_project = $("#OURPROJECT"),
   $body = (window.opera) ? (document.compatMode =="CSS1Compat" ? $('html') : $('body')):$('html,body'),
   current_display = 1;
 
-  $("#TEAMMEMBERS").click(function(){
-    $("#pointer").animate({right:'168px'},10);
+  button_team.click(function(){
+   // $("#pointer").animate({right:'35px'},200);
   });
   arrow.click(function(){
-    $body.stop().animate({
+    $body.animate({
       scrollTop:scroll_bottom},850);
   });
 
   button_project.click(function(){
-    $("#pointer").animate({right:'35px'},10);
+   // $("#pointer").animate({right:'168px'},200);
     $body.animate({
       scrollTop:0},650);
   });
 
-  window.onscroll = function() {ss()};
+ /* window.onscroll = function() {ss()};
   function ss() {
     if (document.body.scrollTop < $("body").height()/2|| document.documentElement.scrollTop <$("body").height()/2){
       $("#OURPROJECT").css("color","#F9D53D");
       $("#TEAMMEMBERS").css("color","#ffffff");
-      $("#pointer").stop().animate({right:'158px'},150);
+      $("#pointer").animate({right:'168px'},50);
     }
     if (document.body.scrollTop > $("body").height()/2|| document.documentElement.scrollTop >$("body").height()/2){
       $("#OURPROJECT").css("color","#ffffff");
       $("#TEAMMEMBERS").css("color","#F9D53D");
-      $("#pointer").stop().animate({right:'35px'},150);
-    }}
+      $("#pointer").animate({right:'35px'},50);
+    }}*/
 
   $('.pic').mousemove((e)=>{
     e.target.style.transform = 'scale(1.4)';
@@ -72,8 +73,8 @@ $(document).ready(function(){
         if(current_display==1) break;
         else{
           $("#member"+current_display+"_intro").stop(true).animate({opacity:'0'},400);
-          $("#member1_intro").animate({top:'+=50px',opacity:'0'},1,function(){
-            $("#member1_intro").animate({top:'-=50px',opacity:'1'},500,)          
+          $("#member1_intro").animate({top:'+=3em',opacity:'0'},1,function(){
+            $("#member1_intro").animate({top:'-=3em',opacity:'1'},500,)          
           });
         }
         current_display = 1;
@@ -82,8 +83,8 @@ $(document).ready(function(){
         if(current_display==2) break;
         else{ 
           $("#member"+current_display+"_intro").stop(true).animate({opacity:'0'},400);
-          $("#member2_intro").animate({top:'+=50px',opacity:'0'},1,function(){
-            $("#member2_intro").animate({top:'-=50px',opacity:'1'},500,)
+          $("#member2_intro").animate({top:'+=3em',opacity:'0'},1,function(){
+            $("#member2_intro").animate({top:'-=3em',opacity:'1'},500,)
           });
         };         
         current_display = 2;
@@ -92,8 +93,8 @@ $(document).ready(function(){
         if(current_display==3) break;
         else{
           $("#member"+current_display+"_intro").stop(true).animate({opacity:'0'},400);
-          $("#member3_intro").stop().animate({top:'+=50px',opacity:'0'},1,function(){
-            $("#member3_intro").stop().animate({top:'-=50px',opacity:'1'},500,)
+          $("#member3_intro").stop().animate({top:'+=3em',opacity:'0'},1,function(){
+            $("#member3_intro").stop().animate({top:'-=3em',opacity:'1'},500,)
           });
         }
         current_display = 3;
@@ -102,8 +103,8 @@ $(document).ready(function(){
         if(current_display==4) break;
         else{ 
           $("#member"+current_display+"_intro").stop(true).animate({opacity:'0'},400);
-          $("#member4_intro").stop().animate({top:'+=50px',opacity:'0'},1,function(){
-            $("#member4_intro").stop().animate({top:'-=50px',opacity:'1'},500,)
+          $("#member4_intro").stop().animate({top:'+=3em',opacity:'0'},1,function(){
+            $("#member4_intro").stop().animate({top:'-=3em',opacity:'1'},500,)
           });
         }
         current_display = 4;
@@ -112,8 +113,8 @@ $(document).ready(function(){
         if(current_display==5) break;
         else{ 
           $("#member"+current_display+"_intro").stop(true).animate({opacity:'0'},400);
-          $("#member5_intro").stop().animate({top:'+=50px',opacity:'0'},1,function(){
-            $("#member5_intro").stop().animate({top:'-=50px',opacity:'1'},500,)
+          $("#member5_intro").stop().animate({top:'+=3em',opacity:'0'},1,function(){
+            $("#member5_intro").stop().animate({top:'-=3em',opacity:'1'},500,)
           });
         }
         current_display = 5;
