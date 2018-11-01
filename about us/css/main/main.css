@@ -83,7 +83,7 @@ nav #nav-items .nav-active {
 }
 nav #nav-items #pointer {
   position: absolute;
-  right: 158px;
+  right: 168px;
   display: block;
   width: 100px;
   height: 3px;
@@ -268,11 +268,6 @@ nav #nav-items #pointer {
   flex: 1;
 }
 #members-wrapper #members-section #members #upper .member {
-  /* width : 20%; */
-  /* height : 35%; */
-  /* overflow : hidden; */
-  /* background-size : cover; */
-  /* background-repeat : no-repeat; */
   display: flex;
   flex: 1;
   align-items: center;

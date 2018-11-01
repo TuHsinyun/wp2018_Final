@@ -11,44 +11,36 @@ $(window).load(function(){
 $(document).ready(function(){
   var arrow = $("#arrow-down img , #nav-items li:eq(0)"),
   scroll_bottom = $("body").height()+$(window).height(),
-  button_project = $("#nav-items li:eq(1)"),
+  button_project = $("#OURPROJECT"),
   $body = (window.opera) ? (document.compatMode =="CSS1Compat" ? $('html') : $('body')):$('html,body'),
   current_display = 1;
 
-  // 導覽行動畫
-  $("#OURPROJECT").click(function(){
-    $("#OURPROJECT").css("color","#F9D53D");
-    $("#TEAMMEMBERS").css("color","#ffffff");
-    $("#pointer").stop().animate({right:'35px'},150);
-    });
-    $("#TEAMMEMBERS").click(function(){
-    $("#TEAMMEMBERS").css("color","#F9D53D");
-    $("#OURPROJECT").css("color","#ffffff");
-    $("#pointer").stop().animate({right:'158px'},150);
-    });
-  window.onscroll = function() {ss()};
-  function ss() {
-  if (document.body.scrollTop < $("body").height()/2|| document.documentElement.scrollTop <$("body").height()/2){
-    $("#OURPROJECT").css("color","#F9D53D");
-    $("#TEAMMEMBERS").css("color","#ffffff");
-    $("#pointer").stop().animate({right:'158px'},150);
-  }
-  if (document.body.scrollTop > $("body").height()/2|| document.documentElement.scrollTop >$("body").height()/2){
-    $("#OURPROJECT").css("color","#ffffff");
-    $("#TEAMMEMBERS").css("color","#F9D53D");
-    $("#pointer").stop().animate({right:'35px'},150);
-  }}
-
-  // 箭頭點擊動畫
+  $("#TEAMMEMBERS").click(function(){
+    $("#pointer").animate({right:'168px'},10);
+  });
   arrow.click(function(){
     $body.stop().animate({
       scrollTop:scroll_bottom},850);
   });
 
   button_project.click(function(){
-    $body.stop().animate({
+    $("#pointer").animate({right:'35px'},10);
+    $body.animate({
       scrollTop:0},650);
   });
+
+  window.onscroll = function() {ss()};
+  function ss() {
+    if (document.body.scrollTop < $("body").height()/2|| document.documentElement.scrollTop <$("body").height()/2){
+      $("#OURPROJECT").css("color","#F9D53D");
+      $("#TEAMMEMBERS").css("color","#ffffff");
+      $("#pointer").stop().animate({right:'158px'},150);
+    }
+    if (document.body.scrollTop > $("body").height()/2|| document.documentElement.scrollTop >$("body").height()/2){
+      $("#OURPROJECT").css("color","#ffffff");
+      $("#TEAMMEMBERS").css("color","#F9D53D");
+      $("#pointer").stop().animate({right:'35px'},150);
+    }}
 
   $('.pic').mousemove((e)=>{
     e.target.style.transform = 'scale(1.4)';
@@ -92,7 +84,6 @@ $(document).ready(function(){
           $("#member"+current_display+"_intro").stop(true).animate({opacity:'0'},400);
           $("#member2_intro").animate({top:'+=50px',opacity:'0'},1,function(){
             $("#member2_intro").animate({top:'-=50px',opacity:'1'},500,)
-              //  setTimeout(,800);
           });
         };         
         current_display = 2;
